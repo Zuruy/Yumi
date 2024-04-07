@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+body{
+    background-color: rgb(221, 237, 251);
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: white;
+    text-align: center;
+    background-color: purple;
+    height: 500px;
+    width: 100%;
+}
+header h1{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 2em;
+  padding-top: 30px;
+  letter-spacing: 10px;  
+}
+header h2{
+    margin-top: 60px;
+    color: rgb(247, 186, 74);
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header img{
+    top: 52%;
+    right: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+nav{
+    width: 100%;
+    top: 20px;
+    position: static;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+
+}
+nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    color: rgb(151, 74, 151);
+    font-weight: BOLD;
+    font-size: 21px;
+}
+#info{
+    width: 300px;
+    padding: 10px;
+    line-height: 32px;
+    font-size: 1.4em;
+    position: relative;
+    transition-duration: 2s;
+    animation: anima 3s linear;
+}
+@keyframes anima {
+  
+    50%{
+        opacity:20% ;
+        left: 100px;
+    }
+    75%{
+        left: 60px;
+        opacity:50% 
+    }
+    100%{
+        opacity: 100%;
+        left: 0;
+    }
+}
+.painel h2{
+    text-align: center;
+    color:rgb(126, 67, 149);
+}
+#fundo{
+    background-color: black;
+    height: 600px;
+    width: 100%;
+}
+.artes img{
+    box-shadow: 5px 2px 36px 2px white;
+   position: absolute;
+    padding: 30px;
+    margin-top: 50px;
+    width: 60%;
+    height: 400px;
+    animation: arte 3s linear;
+
+}
+@keyframes arte{
+  
+    50%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.desenhos img{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    left:70% ;
+}
