@@ -7,6 +7,7 @@ body{
     background-color: rgb(221, 237, 251);
     margin: 0;
     padding: 0;
+    font-family: 'roboto','san-serif';
 }
 header{
     color: white;
@@ -82,31 +83,33 @@ nav a:hover{
     text-align: center;
     color:rgb(126, 67, 149);
 }
-#fundo{
+.fundo{
     background-color: black;
     height: 600px;
     width: 100%;
 }
-.artes img{
+.price{
+    transition-duration: 1s;
     box-shadow: 5px 2px 36px 2px white;
    position: absolute;
     padding: 30px;
     margin-top: 50px;
     width: 60%;
     height: 400px;
-    animation: arte 3s linear;
+    animation: arte 4s infinite;
 
 }
 @keyframes arte{
   
-    50%{
-        bottom: 50px;
+    20%{
+        left: 30px;
     }
-    100%{
-        bottom: 0;
+    50%{
+        left: 0;
     }
 }
 .desenhos img{
+    margin: 10px;
     width: 250px;
     height: 300px;
     position: relative;
