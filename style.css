@@ -13,7 +13,7 @@ body{
 header{
     color: white;
     text-align: center;
-    background-color: purple;
+    background-image: linear-gradient(to left,purple,rgb(96, 2, 96),rgb(61, 0, 61));
     height: 500px;
     width: 100%;
 }
@@ -37,18 +37,19 @@ header img{
     border-radius: 50%;
 }
 nav{
+  
     width: 100%;
     top: 20px;
     position: static;
     background-color: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     padding: 10px;
 
 }
 nav a{
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     transition-duration: 0.5s;
 }
 nav a:hover{
@@ -56,8 +57,17 @@ nav a:hover{
     font-weight: BOLD;
     font-size: 21px;
 }
-#info{
-    width: 300px;
+#sobre:target{
+
+}
+#dral:target{
+
+}
+#tabela:target{
+    
+}
+.info{
+    max-width: 400px;
     padding: 10px;
     line-height: 32px;
     font-size: 1.4em;
@@ -65,10 +75,22 @@ nav a:hover{
     transition-duration: 2s;
     animation: anima 3s linear;
 }
-#info h2:hover{
+
+#center h2{
+    text-align: center;
+}
+#tabela{
+    box-shadow: 2px 2px 20px 7px purple;
+    position: absolute;
+    right: 10%;
+    width: 80%;
+    height: 500px;
+
+}
+.info h2:hover{
     animation: anima 3s linear;
 }
-#info p:hover{
+.info p:hover{
     animation: anima 3s linear;
 }
 @keyframes anima {
@@ -94,7 +116,7 @@ nav a:hover{
     color:rgb(126, 67, 149);
 }
 .fundo{
-    background-color: black;
+    background-color: rgb(27, 1, 28);
     height: 600px;
     width: 100%;
 }
@@ -123,12 +145,14 @@ nav a:hover{
     }
 }
 .desenhos img{
+    border-radius: 7px;
     border: 2px solid rgb(89, 27, 89);
     margin: 10px;
     width: 250px;
     height: 300px;
     position: relative;
-    left:70% ;
+    display: inline;
+    margin: 20px;
     transition-duration: 1s;
 }
 .desenhos img:hover{
