@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-
+:root{
+ --curso:'Sacramento'
+}
 
 body{
     background-color: rgb(221, 237, 251);
@@ -66,6 +68,9 @@ nav a:hover{
 #tabela:target{
     
 }
+#final:target{
+
+}
 .info{
     max-width: 400px;
     padding: 10px;
@@ -80,9 +85,10 @@ nav a:hover{
     text-align: center;
 }
 #tabela{
+    margin-bottom: 30px;
     box-shadow: 2px 2px 20px 7px purple;
-    position: absolute;
-    right: 10%;
+    position: relative;
+    left: 10%;
     width: 80%;
     height: 500px;
 
@@ -158,4 +164,38 @@ nav a:hover{
 .desenhos img:hover{
     width: 270px;
     height: 330px;
+}
+.mais{
+    color: white;
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(to left,purple,rgb(96, 2, 96),rgb(61, 0, 61));
+}
+.mais h1{
+    padding-top: 20px;
+    font-size: 5.4em;
+    text-align: center;
+    color: rgb(247, 186, 74);
+    font-family: var(--curso);
+}
+.mais p{
+    font-size: 24px;
+    text-align: center;
+}
+#social{
+    align-items: center;
+    margin: 30px;
+    
+}
+#social img{
+    display: inline;
+    margin-left: 20px;
+    left: 35%;
+    position: relative;
+    width: 80px;
+    transition-duration: 1s;
+
+}
+#social img:hover{
+    width: 100px;
 }
