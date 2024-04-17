@@ -40,7 +40,7 @@ header img{
     border-radius: 50%;
 }
 nav{
-  
+    margin: 5px;
     width: 100%;
     top: 20px;
     position: static;
@@ -73,6 +73,7 @@ nav a:hover{
 
 }
 .info{
+    margin: 14px;
     max-width: 400px;
     padding: 10px;
     line-height: 32px;
