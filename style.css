@@ -224,6 +224,7 @@ nav a:hover{
 
 /* Estilos para o contêiner do Swiper */
 .desenhos {
+    display: inline;
     position: relative;
     overflow: hidden; /* Garante que os slides não ultrapassem os limites do contêiner */
 }
