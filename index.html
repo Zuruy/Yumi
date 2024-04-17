@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/social/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!-- Adicione a biblioteca do Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Yumi</title>
 </head>
 <body>
@@ -29,19 +31,26 @@
             <div class="fundo">
                 <img class="price" src="image/desnhos/kaiba.jpg" alt="">
             </div>
-           <div class="desenhos">
-               <img src="image/desnhos/freiren.jpg" alt="friren">
-               <img src="image/desnhos/digital.png" alt="digital_Art">
-               <img src="image/desnhos/morte.jpg" alt="imagem.morte">
-               <img src="image/desnhos/nami.jpg" alt="nami_one_piece"> 
-               <img src="image/desnhos/yuki.jpg" alt="YUki">
-               <img src="image/desnhos/yumi.jpg" alt="Yumi">
-           </div>
+            <div class="desenhos swiper-container"> <!-- Adicione a classe swiper-container aqui -->
+                <div class="swiper-wrapper"> <!-- Adicione a classe swiper-wrapper aqui -->
+                    <div class="swiper-slide"><img src="image/desnhos/freiren.jpg" alt="friren"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/digital.png" alt="digital_Art"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/morte.jpg" alt="imagem.morte"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/nami.jpg" alt="nami_one_piece"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/yuki.jpg" alt="YUki"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/yumi.jpg" alt="Yumi"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/chibi (1).jpg" alt="Yumi"></div>
+                    <div class="swiper-slide"><img src="image/desnhos/rascunho.jpg" alt="Yumi"></div>
+                </div>
+                <!-- Adicione botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
-       <div class="info">
-         <h2 id="dral">Desenhos</h2>
+        <div class="info">
+            <h2 id="dral">Desenhos</h2>
             <p>Como podem ver, estes são alguns dos meus trabalhos. Posso criar artes em diversos estilos, como realismo, chibi, anime e digital.</p>
-       </div>
+        </div>
     </div>
    
     <div class="info" id="center">
@@ -59,5 +68,20 @@
             <a href=""><img src="image/social/face.png" alt=""></a>
         </div>
     </div>
+
+    <!-- Adicione o código JavaScript para inicializar o Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicialize o Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>

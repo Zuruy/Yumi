@@ -201,3 +201,25 @@ nav a:hover{
 #social img:hover{
     width: 100px;
 }
+/* Estilos para os botões de navegação do Swiper */
+/* Estilos para o contêiner do Swiper */
+.desenhos {
+    position: relative;
+}
+
+/* Estilos para os botões de navegação do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
