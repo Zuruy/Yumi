@@ -222,38 +222,30 @@ nav a:hover{
     transition: background-color 0.3s ease;
 }
 
+
 /* Estilos para o contêiner do Swiper */
 .desenhos {
-    display: inline;
+    
     position: relative;
     overflow: hidden; /* Garante que os slides não ultrapassem os limites do contêiner */
 }
 
 /* Estilos para os botões de navegação do Swiper */
+/* Estilos para os slides */
 .swiper-slide {
     position: relative;
     flex-shrink: 0;
     width: 100%; /* Define a largura dos slides como 100% */
     height: 300px; /* Altura fixa para os slides */
+    margin-right: 20px; /* Adiciona um espaço entre os slides */
 }
 
 /* Estilos adicionais para telas pequenas */
 @media (max-width: 768px) {
     .swiper-slide {
         height: 200px; /* Reduz a altura dos slides em telas pequenas */
+        margin-right: 10px; /* Reduz o espaço entre os slides em telas pequenas */
     }
 }
 
-/* Estilos para cada slide */
-.swiper-slide {
-    flex-shrink: 0; /* Impede que os slides sejam reduzidos além de sua largura */
-    margin-right: 10px; /* Espaço entre os slides */
-}
-
-/* Estilos adicionais para telas menores */
-@media (max-width: 768px) {
-    .swiper-slide {
-        margin-right: 300px; /* Reduz o espaço entre os slides em telas menores */
-    }
-}
 
