@@ -7,6 +7,7 @@
 }
 
 body{
+    overflow-x: hidden; /* Remove a rolagem horizontal */
     background-color: rgb(221, 237, 251);
     margin: 0;
     padding: 0;
