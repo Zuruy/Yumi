@@ -205,7 +205,9 @@ input{
     margin: 20px;
     transition-duration: 1s;
 }
+
 .desenhos img:hover{
+    
     width: 270px;
     height: 330px;
 }
@@ -287,6 +289,7 @@ input{
     .swiper-slide {
         height: 200px; /* Reduz a altura dos slides em telas pequenas */
         margin-right: 10px; /* Reduz o espaço entre os slides em telas pequenas */
+        margin-left: 100px;
     }
     nav{
         display: none;
